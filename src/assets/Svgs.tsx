@@ -58,7 +58,6 @@ export const Moon = ({ width, height }: ThemeIconType) => {
 };
 
 export const Logo = ({ fill }: { fill: string }) => {
-  console.log(fill);
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
