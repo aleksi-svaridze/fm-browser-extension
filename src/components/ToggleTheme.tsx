@@ -9,8 +9,12 @@ function ToggleTheme({
   setIsDark: React.Dispatch<React.SetStateAction<boolean>>;
 }) {
   return (
-    <button className={`size-4`} onClick={() => setIsDark(!isDark)}>
-      {isDark ? <Sun /> : <Moon />}
+    <button className="cursor-pointer" onClick={() => setIsDark(!isDark)}>
+      {isDark ? (
+        <Sun height={22} width={22} />
+      ) : (
+        <Moon height={22} width={22} />
+      )}
     </button>
   );
 }
